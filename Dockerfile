@@ -9,8 +9,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/France-King1/Flash-Md  /root/Flash_BOt
-WORKDIR /root/Flash_Bot/
+RUN git clone https://github.com/ibrahimaitech/BMW-MD.git  /root/BmwMD
+WORKDIR /root/bmwmd/
 
 
 COPY package.json .
@@ -21,4 +21,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "flash.js"]
+CMD ["node", "ibrahim.js"]
